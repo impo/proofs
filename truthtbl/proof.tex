@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{parskip}
+
+\begin{document}
+Theorem: A truth table covering n variables (where n is a positive integer) has
+$2^n$ rows.
+
+Proof by induction: First, we see that a single-variable truth table has two
+rows: one for truth and one for falsehood. Suppose a truth table with k
+variables has $2^k$ rows. Then there are $2^k$ unique combinations of truth and
+falsehood for those k variables. Suppose we add another variable to the table,
+giving it (k+1) variables. Now for each unique combination in the table before
+modification, our new variable can be either true or false, replacing each
+combination with two potential unique combinations, so that we now have $2*2^k$
+total combinations, or $2^{k+1}$. Thus we may conclude that if this property
+holds for k, then it holds for (k+1). Since the property holds for k=1, we know
+it holds for all of the positive integers. Thus, for any positive integer n, a
+truth table covering n variables has $2^n$ rows.
+\end{document}
