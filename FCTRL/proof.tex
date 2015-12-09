@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\begin{document}
+
+\begin{description}
+    \item[Theorem.] \hfill \\
+        If $x$ isn't divisible by 10, but $x$ is divisible by
+        either 5 or 2, then $x$ is not divisible by both 5 and 2.
+    \item[Proof.] \hfill \\
+        Suppose $x$ is not divisible by 10. Suppose $x$ is
+        divisible by either 5 or 2. Now we have 2 cases.
+    \begin{description}
+        \item[Case 1.] $x | 2$. Then we have an integer $k$ such that $2k = x$.
+            Suppose $x | 5$. Then we have an integer $m$ such that $5m = x$.
+            Then $m = \frac{2k}{5} = 2 * \frac{x}{10}$. But 10 doesn't divide
+            $x$, so we have a contradiction. Thus, 5 doesn't divide $x$, so
+            either 5 doesn't divide $x$ or 2 doesn't divide $x$.
+        \item[Case 2.] $x | 5$. Then we have an integer $m$ such that $5m = x$.
+            Suppose $x | 2$. Then we have an integer $k$ such that $2k = x$.
+            Then $k = \frac{5m}{2} = 5 * \frac{x}{10}$. But 10 doesn't divide
+            $x$, so we have a contradiction. Thus, 2 doesn't divide $x$, so
+            either 5 doesn't divide $x$ or 2 doesn't divide $x$.
+    \end{description}
+Therefore, we know that 5 doesn't divide $x$ or 2 doesn't divide $x$. Thus, if
+$x$ isn't divisible by 10, and $x$ is divisible by either 5 or 2, then x is
+not divisible by both 5 and 2. \hfill \ensuremath{\Box}
+\end{description}
+
+\end{document}
